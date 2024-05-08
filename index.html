@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="drone.js"></script>
 </head>
 <body>
+  <div style="margin:2rem;padding-left: 7rem;display: flex;gap: 15rem;justify-content: center;">
+    <button onclick="drone()" style="height: 2rem;width: 9rem;background-color: orange;">Drone</button>
+    <button onclick="analytics()" style="height: 2rem;width: 9rem;background-color: rgb(20, 190, 111);">Analytics</button>
+  </div>
+
+
+
+  <div id="drone" style="display: none;">
     <video width="1620" height="440" controls>
         <source src="drone.mp4" type="video/mp4">
-        <!-- <source src="movie.ogg" type="video/ogg"> -->
         Your browser does not support the video tag.
       </video> 
       <div>
@@ -44,7 +52,10 @@ provide power for up to 1 hour. <br> <br>
 communication link for the remote control and monitor the status of the hexacopter.
               </p>
       </div>
+  </div>
 
+
+  <div id="analytics" style="display: none;">
     <img src="data.png" width="1620" height="440" alt="reloading">
     <br>
     <p>Creating a Power BI report for a blood donation system involves visualizing various aspects 
@@ -66,7 +77,12 @@ communication link for the remote control and monitor the status of the hexacopt
     2. Donut chart showing blood type distribution in inventory.br>
     d. Donation Locationsbr>
     1. Map visualizing donation locations.br>
-    2. Bar chart showing the number of donations by location</p>
+    2. Bar chart showing the number of donations by location</p> 
+
+  </div>
+  
+    
+
 
 </body>
 </html>
